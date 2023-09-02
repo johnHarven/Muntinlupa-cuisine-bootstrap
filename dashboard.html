@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Filipino Cuisine Delights</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
+    <link href="style.css" rel="stylesheet"> <!-- Link to the custom CSS file -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="other-nav">
+        <a href="index.html" class="navbar-brand" href="#">Dashboard</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <span class="nav-link">|</span> <!-- Divider line -->
+                <li class="nav-item">
+                    <a class="nav-link" href="registration.html">Registration</a>
+                </li>
+                <span class="nav-link">|</span> <!-- Divider line -->
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <span class="nav-link">|</span> <!-- Divider line -->
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">Dashboard</a>
+                </li>
+                <!-- Add some spacing -->
+                <li class="nav-item">
+                </li>
+            </ul>
+        </div>
+        <a href="index.html" class="btn btn-secondary mt-3 main-menu-btn">Back to Main Menu</a>
+    </nav>
+
+    <!-- Dashboard Page Content -->
+    <div class="container mt-5">
+        <h2>Dashboard</h2>
+        <hr>
+        <div class="card-deck mt-4">
+            <div class="card">
+                <div class="row no-gutters dashboard-whole">
+                    <!-- Image on the right -->
+                    <div class="col-md-2">
+                        <img src="images/adobo.jpg" class="dashboard-image" alt="Adobo">
+                    </div>
+                    <!-- Text on the left -->
+                    <div class="col-md-8">
+                        <div class="card-body dashboard-image-card-font">
+                            <h5 class="card-title-dashboard ">Adobo</h5>
+                            <p class="card-text card-text-dashboard">A classic Filipino dish known for its savory and slightly tangy flavor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="row no-gutters dashboard-whole">
+                    <!-- Image on the right -->
+                    <div class="col-md-2">
+                        <img src="images/sinigang.jpg" class="dashboard-image" alt="Sinigang">
+                    </div>
+                    <!-- Text on the left -->
+                    <div class="col-md-8">
+                        <div class="card-body dashboard-image-card-font">
+                            <h5 class="card-title-dashboard ">Sinigang</h5>
+                            <p class="card-text card-text-dashboard">A sour soup made with tamarind, vegetables, and your choice of protein.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="row no-gutters dashboard-whole">
+                    <!-- Image on the right -->
+                    <div class="col-md-2">
+                        <img src="images/halo-halo.jpg" class="dashboard-image" alt="Halo-halo">
+                    </div>
+                    <!-- Text on the left -->
+                    <div class="col-md-8">
+                        <div class="card-body halo-halo-card">
+                            <h5 class="card-title-dashboard ">Halo-halo</h5>
+                            <p class="card-text card-text-dashboard">A refreshing dessert made with a mix of fruits, sweet beans, and shaved ice.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="footer">
+        <i class="fa-brands fa-twitter footer-icon"></i>
+        <i class="fa-brands fa-facebook-f footer-icon"></i>
+        <i class="fa-brands fa-instagram footer-icon"></i>
+        <i class="fa-brands fa-linkedin footer-icon"></i>
+      <p class="copyright">© Copyright 2022 John Harven Tapalla</p>
+  
+    </footer>
+
+</body>
+</html>

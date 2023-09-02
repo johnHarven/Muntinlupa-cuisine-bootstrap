@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Filipino Cuisine Delights</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
+    <link href="style.css" rel="stylesheet"> <!-- Link to the custom CSS file -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="index.html" class="navbar-brand" href="#">Registration</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <span class="nav-link">|</span> <!-- Divider line -->
+                <li class="nav-item">
+                    <a class="nav-link" href="registration.html">Registration</a>
+                </li>
+                <span class="nav-link">|</span> <!-- Divider line -->
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <span class="nav-link">|</span> <!-- Divider line -->
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">Dashboard</a>
+                </li>
+                <!-- Add some spacing -->
+                <li class="nav-item">
+                </li>
+            </ul>
+        </div>
+        <a href="index.html" class="btn btn-secondary mt-3 main-menu-btn">Back to Main Menu</a>
+    </nav>
+
+    <!-- Registration Page Content -->
+    <div class="container mt-5 container-registration">
+        <h2>Registration</h2>
+        <hr>
+        <form>
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password">
+            </div>
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password">
+            </div>
+            <div class="mb-3">
+                <label for="favoriteDish" class="form-label">Favorite Filipino Dish</label>
+                <input type="text" class="form-control" id="favoriteDish" placeholder="What's your favorite Filipino dish?">
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+        
+    </div>
+
+
+    <footer id="footer">
+        <i class="fa-brands fa-twitter footer-icon"></i>
+        <i class="fa-brands fa-facebook-f footer-icon"></i>
+        <i class="fa-brands fa-instagram footer-icon"></i>
+        <i class="fa-brands fa-linkedin footer-icon"></i>
+      <p class="copyright">© Copyright 2022 John Harven Tapalla</p>
+  
+    </footer>
+
+</body>
+</html>

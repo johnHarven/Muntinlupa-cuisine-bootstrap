@@ -1,0 +1,331 @@
+/***************************************  Combining Selector NOTES!  ***************************************** */
+/*
+Multiple Selectors:
+h1, h2, h3, h4, h5, h6 {        <----------------------   #selector 1, selector 2 {}                 !!!! COMMA IN BETWEEN!!!!
+    font-family:'Montserrat', sans-serif;
+}
+
+Heirarchical Selectors:         
+#title .container-fluid {       <----------------------   #(OUTER)selector 1 (INNER)selector 2 {}     !!!! NOTICE NO COMMA IN BETWEEN!!!!
+    padding-top: 3%;
+    text-align: left;
+}
+
+Combined Selectors:        <---------------------- This just means you can combine selectors in the same line
+div.container-fluid {           <----------------------   #same-line-selector-1same-line-selector-2 {}     !!!! NOTICE NO SPACE IN BETWEEN (1 & same)!!!!
+    color: red
+}
+Heirarchy Priority :   Inline style > ID selector > Class selector > HTML Tag selector
+
+                       ^ Avoid Inline style!! It is a bad practice
+*/
+/***************************************HTML Tag Selector***************************************** */
+body {
+    font-family:'Montserrat', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Montserrat', sans-serif;
+}
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+nav {
+    margin-bottom: 75px;
+}
+
+p {
+    color: #8f8f8f
+}
+/***************************************Class Selector******************************************/
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+.btn {
+    margin: 7px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+}
+
+.nav-link {
+    margin: 20px;
+    font-size: 1.25rem;
+}
+
+.fa-solid {
+    color: #ef8172;
+    font-size:80px;
+    padding-bottom: 20px;
+}
+
+.fa-solid:hover {
+    color: #ff4c68;
+    font-size:80px;
+    padding-bottom: 20px;
+}
+
+.col-lg-4 {
+    padding: 44px;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;  /* this is to make the picture border round */
+    margin: 20px;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+.carousel-indicators {
+    text-align: center;
+    position: relative;
+        top: 550px;
+
+}
+
+.carousel-item {
+        padding: 7% 15%;
+}
+
+.card {
+    padding: 0;
+}
+
+.card-body {
+    padding: 0;
+    text-align: center;
+}
+
+/* NOTE! pwede nga pala ipagdugtong ang mga class selector kung may period!!!
+/* .card-title.pricing-card-title {
+    font-weight: 400; 
+}*/
+
+.simple-affordable {
+    margin-bottom: 80px;
+}
+
+.footer-icon {
+    padding: 0.6%
+}
+
+.copyright {
+    font-size: smaller;
+    margin-top: 20px;
+}
+/***************************************ID Selector***************************************** */
+
+#title {
+    background-color: #ff4c68 ;
+    padding-bottom: 180px;
+}
+
+#tindog {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+}
+
+#menu-picture {
+    transform: rotate(25deg);
+    width: 90%;
+    position: relative;
+    left: 70px;
+    top: 80px;
+}
+/* below code: this is my initial solution below but i prefer ms. angela yu's code*/
+/* #features {                 
+    width: 65%;
+    margin: 100px auto;
+    text-align: center;
+} */
+/*  */
+#features {
+    padding: 7% 15% 1px;  /* 7% is the top, 15% is the left and right, 1% is bottom */
+    padding-top: 150px;
+    text-align: center;
+    background-color: white;
+    z-index: 1;
+    position: relative;
+    bottom: 170px;  /* this is the position:relative adjustment, so that the #features div will climb 170px from the bottom */
+}
+/* This is angela yu's solution to the feature ID selector above */
+
+/* #guaranteed-to-work {
+    font-size: 1.47rem;
+} */
+
+#testimonials {
+
+    text-align: center;
+    background-color: #ef8172;
+    color: white;
+}
+
+#press {
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+#pricing {
+    text-align: center;
+    padding:100px;
+}
+
+#pricing-card {
+    padding: 3% 2%;
+}
+
+#cta {
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 100px;
+    color: white;
+    font-size: 7.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+
+}
+
+#cta-h3 {
+    padding: 1% 13%;
+    margin-bottom: 0px;
+}
+
+#footer {
+    text-align: center;
+    background-color: white;
+    padding: 50px;
+
+}
+/***************************************Media Quert***************************************** */
+
+@media (max-width: 992px) {
+   
+    #title{
+        text-align: center;
+    }
+    #iphone-6 {
+        position: static;
+        transform: rotate(0);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1290px) {
+
+    #features {
+        position: relative;
+        bottom: 0px;
+    }
+
+}
+
+/***************************************index,dashboard,login.html CSS ***************************************** */
+
+/* styles.css */
+.navbar-brand {
+    padding-left: 20px; /* Adjust the value as needed */
+}
+
+
+
+.card-img-top {
+    max-width: 80px;
+    max-height: 80px;
+    margin-right: 20px; /* Add margin to separate the icon from content */
+    padding-left: 20px;
+    overflow: hidden; /* Hide any content overflowing from the circular shape */
+}
+
+.gray-text {
+    color: #6c757d; /* Use a gray color for the text */
+}
+
+.dashboard-whole{
+    margin: 100px;
+}
+
+.btn-secondary {
+    margin-top: px;
+}
+
+.dashboard-image {
+    max-width: 400px;
+    max-height: 400px;
+    margin-right: 20px; /* Add margin to separate the icon from content */
+    padding-left: 20px;
+    border-radius: 50%; /* Make the image circular */
+    overflow: hidden; /* Hide any content overflowing from the circular shape */
+}
+
+.main-menu-btn {
+    margin-bottom: 16px;
+    margin-right: 16px;
+}
+
+.container-registration {
+    max-width: 700px;
+}
+
+.container-login {
+    max-width: 700px;
+}
+
+.dashboard-image-card-font {
+    margin-left: 300px;
+    margin-top: 100px;
+}
+
+.halo-halo-card {
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+.card-title-dashboard {
+    font-size: 100px;
+    text-align: center; /* Center align the card title */
+    margin-bottom: 20px; /* Add a margin at the bottom */
+}
+
+.card-text-dashboard {
+    text-align: center; /* Center align the card title */
+    font-size: 15px;
+}
+
+.card-deck {
+    display: flex; /* Use flex display to align cards in a row */
+    justify-content: space-between; /* Add space between cards */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
+}
+
+.card-index {
+    flex-basis: calc(33.33% - 20px); /* Set the basis for the flex item to take up 1/3 of the available space minus margin */
+    margin-bottom: 20px; /* Add some margin at the bottom of each card */
+}
+
+#footer {
+    text-align: center;
+    background-color: white;
+    padding: 50px;
+
+}
